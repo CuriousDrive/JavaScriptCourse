@@ -1,9 +1,9 @@
 <p id="demo"></p>
 <script>
     let name = "Jane";
-    let age = 21;
+    let age = 15;
     let message = "No message";
-    if(name == "Jane"){
+    if(age > 16 && (name == "Jane" || name == "John")){
         message = "Software Engineer";
     }
     document.getElementById("demo").innerHTML = message;
