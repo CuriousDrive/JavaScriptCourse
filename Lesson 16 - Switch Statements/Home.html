@@ -1,18 +1,21 @@
 <p id="demo"></p>
 <script>
-    let name = "Jane";
+    let name = "Monica";
     let age = 15;
-    let message = "No message";
+    let message = "";
 
-    if(name == "Jane"){
-        message = "Jane is a Teacher.";
-    }
-    if(name == "Monica"){
-        message = "Monica is a Landscape Architect.";
-    }
-    if(name == "Fahad"){
+    switch(name){
+        case "Jane":
+        case "Monica":
+        message = name + " is a Landscape Architect.";
+        break;
+
+        case "Fahad":
         message = "Fahad is a Software Engineer.";
+        break;
+
+        default:
+        message = "No message";
     }
-    
     document.getElementById("demo").innerHTML = message;
 </script>
