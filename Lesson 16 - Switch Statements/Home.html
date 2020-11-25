@@ -3,8 +3,16 @@
     let name = "Jane";
     let age = 15;
     let message = "No message";
-    if(age > 16 && (name == "Jane" || name == "John")){
-        message = "Software Engineer";
+
+    if(name == "Jane"){
+        message = "Jane is a Teacher.";
     }
+    if(name == "Monica"){
+        message = "Monica is a Landscape Architect.";
+    }
+    if(name == "Fahad"){
+        message = "Fahad is a Software Engineer.";
+    }
+    
     document.getElementById("demo").innerHTML = message;
 </script>
