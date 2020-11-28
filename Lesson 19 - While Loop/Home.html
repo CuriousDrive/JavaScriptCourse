@@ -5,8 +5,13 @@
     //incremented by
     //start?
     //end?
-    for(let counter = 1; counter <= 30; counter++){
+    let counter = 1;
+    while(counter <= 30){
         message += counter + "Hello ";
+        if(counter >= 20){
+            break;
+        }
+        counter++;
     }
     document.getElementById("demo").innerHTML = message;
 </script>
