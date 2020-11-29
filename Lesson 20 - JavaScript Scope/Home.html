@@ -1,0 +1,13 @@
+<p id="demo"></p>
+<script>
+    let message = "";
+    let counter = 1;
+    while(counter <= 30){
+        message += counter + "Hello ";
+        if(counter >= 20){
+            break;
+        }
+        counter++;
+    }
+    document.getElementById("demo").innerHTML = message;
+</script>
