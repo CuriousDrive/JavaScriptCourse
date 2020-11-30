@@ -1,12 +1,8 @@
 <p id="demo1"></p>
-<p id="demo2"></p>
 <script>
+    
+    function submit(){
+        document.getElementById("demo1").innerHTML = "Hello";
+    }
 
-    getArea = (radius) => 3.14*(radius**2);
-    add = (x,y) => x + y;
-
-    let result = getArea(15);
-    document.getElementById("demo1").innerHTML = result;
-
-    document.getElementById("demo2").innerHTML = add(5,6);
 </script>
