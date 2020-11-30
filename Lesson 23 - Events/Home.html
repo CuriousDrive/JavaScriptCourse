@@ -1,8 +1,12 @@
+<input type="text" id="txtName" onkeyup="submit()">
+<br/>
+<br/>
 <p id="demo1"></p>
 <script>
     
     function submit(){
-        document.getElementById("demo1").innerHTML = "Hello";
+        let name = document.getElementById("txtName").value;
+        document.getElementById("demo1").innerHTML = name;
     }
 
 </script>
