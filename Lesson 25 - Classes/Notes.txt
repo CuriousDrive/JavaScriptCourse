@@ -1,0 +1,55 @@
+Door => 
+    Height
+    Width
+    Color
+    State
+
+    Open()
+    Close()
+    Lock()
+    Unlock()
+
+MotorCycle => 
+    Type
+    Color
+    Price
+
+    Start()
+    Accerate()
+    Brake()
+    Turn("left")
+    Stop()
+
+Student =>
+    FirstName
+    LastName
+    Age
+    Gender
+    Address
+
+    Read()
+    Write()
+    PlayGame()
+
+FacebookUser =>
+    FirstName
+    LastName
+    EmailAddress
+    PhoneNumber
+
+    Login()
+    Post()
+    Comment()
+    Like()
+    Logout()
+
+
+TinderUser =>
+    FirstName
+    LastName
+    EmailAddress
+    PhoneNumber
+
+    Login()
+    Swipe(left)
+    Logout()
