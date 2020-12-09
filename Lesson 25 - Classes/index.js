@@ -8,7 +8,7 @@ function submit(){
     student2.age = 20;
     student2.grades = "A+";
 
-    document.getElementById("demo1").innerHTML = student2.firstName;
+    document.getElementById("demo1").innerHTML = student2.showGrades();
 }
 
 class Student{
@@ -17,5 +17,13 @@ class Student{
         this.lastName = lastName;
         this.age = age;
         this.grades = grades;
+    }
+
+    submitAssignment() {
+        return this.firstName + " has submitted the assignment";
+    }
+
+    showGrades() {
+        return this.grades;
     }
 }
