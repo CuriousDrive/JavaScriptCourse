@@ -8,7 +8,18 @@ function submit(){
     student2.age = 20;
     student2.grades = "A+";
 
-    document.getElementById("demo1").innerHTML = student2.showGrades;
+    let motorcycle = {
+        type: "Sports",
+        color: "Red",
+        price: 10000,
+        getPrice: function () {
+            return this.price * 0.83 + " in Euros";
+        }
+    }
+
+    motorcycle.price = 7000;
+
+    document.getElementById("demo1").innerHTML = motorcycle.getPrice();
 }
 
 class Student{
