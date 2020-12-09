@@ -1,6 +1,6 @@
 function submit(){
     
-    let sentence = "John goes to school everyday";
+    let price = 777;
     
-    document.getElementById("demo1").innerHTML = "";
+    document.getElementById("demo1").innerHTML = value;
 }
