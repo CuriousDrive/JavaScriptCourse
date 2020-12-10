@@ -1,12 +1,8 @@
 let sentence = "John goes to school everyday!!";
 
-//properties
-    length
-//functions without use of index
-    toUpperCase()
-    toLowerCase()
-    replace()
-    concat()
-    includes()
-    startsWith()
-    endsWith()
+//Functions
+    toString()
+    toFixed()
+    Number()
+    parseInt()
+    parseFloat()
