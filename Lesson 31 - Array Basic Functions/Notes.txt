@@ -14,11 +14,11 @@ function Submit() {
 
     //toString => it converts the array into a string
 
+    //join => joins the array with the character that you pass
+
     //converting string to array
     //let name = Array.from("Fahad");
     //console.log(Array.isArray(name));
-
-    //join => joins the array with the character that you pass
 
     ***
 
