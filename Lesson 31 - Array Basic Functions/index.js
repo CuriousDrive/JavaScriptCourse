@@ -3,12 +3,9 @@ function submit(){
     let names = ["John", "Jane", "Fahad", "Monica", "Sherlock"];
     let scores = [35, 90, 77, 80];
     
-    let lang = "JavaScript";
-    let arrLang = Array.from(lang);
-
-    for (let i = 0; i < arrLang.length; i++){
-        console.log(arrLang[i]);
+    for (let i = 0; i < names.length; i++){
+        console.log(names[i]);
     }
 
-    document.getElementById("demo1").innerHTML = names.join("*");
+    document.getElementById("demo1").innerHTML = names.length;
 }
