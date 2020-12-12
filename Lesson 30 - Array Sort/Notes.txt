@@ -1,8 +1,0 @@
-let sentence = "John goes to school everyday!!";
-
-//Functions
-    toString()
-    toFixed()
-    Number()
-    parseInt()
-    parseFloat()
