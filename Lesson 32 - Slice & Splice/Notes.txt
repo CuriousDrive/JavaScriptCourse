@@ -1,0 +1,172 @@
+function Submit() {
+    
+    let strArray = ["C#", "Java", "GoLang", "Rust", "Python", "JavaScript"];
+    let numArray = [10, 30, 20, 50, 40, 5];
+
+    //all the methods used in this file could be found in below link
+    //https://www.w3schools.com/jsref/jsref_obj_array.asp
+
+    ---- THE FUNCTIONS THAT DO NOT NEED TO PASS INDEX ---
+
+    //using for loop on the array
+    // for (let i = 0; i < strArray.length; i++)
+    //     console.log(strArray[i] + " " + numbers[i]);
+
+    //toString => it converts the array into a string
+
+    //join => joins the array with the character that you pass
+
+    //converting string to array
+    //let name = Array.from("Fahad");
+    //console.log(Array.isArray(name));
+
+    ***
+
+    //push => adds new elements in the array
+    //comment => this returns the lenght of the array after pushing
+    //console.log(strArray.push("C", "Java"));
+    
+    //pop => removes the last element from the array
+    //comment => this works like Stack 
+    //console.log(strArray.pop());
+
+    //unshift => Adds new elements to the beginning of an array, and returns the new length
+    //console.log(strArray.unshift("Ruby", "C"));
+    //console.log(strArray);
+
+    //shift => Removes the first element of an array, and returns that element
+    //console.log(strArray.shift());
+    //console.log(strArray);
+
+    ***
+
+    //concat => it returns the concatinated array
+    // let strMoreLanguages = ["C", "C++", "Ruby"];
+    // strArray = strArray.concat(strMoreLanguages);
+    // for (let i = 0; i < strArray.length; i++)
+    //     console.log(strArray[i]);
+
+    //reverse => Reverses the order of the elements in an array
+    //commnet => string does not have reverse method though
+    //strArray = strArray.reverse();
+    //console.log(strArray);
+    //console.log(Array.from("Fahad").reverse());
+
+    //indexOf => Search the array for an element and returns its position
+    //console.log(strArray.indexOf("JavaScript"));
+
+    ---------------------------------------------------------
+
+    ----- THE METHODS WHICH ARE GOING TO NEED INDEX ---------
+
+    //slice => Selects a part of an array, and returns the new array
+    //it takes the start and the end index and returns the array
+    //comment => you can do the same thing in C# by using Skip and Take
+    //strArray = strArray.slice(0, 2);
+    //console.log(strArray);
+
+    //splice => Adds/Removes elements from an array
+    //comment => I don't think there's anything in C# for this
+    // console.log(strArray.splice(3, 1, "Ruby"));
+    // console.log(strArray);
+    //console.log(strArray.splice(3,3));
+    //console.log(strArray);
+
+    ---------------------------------------------------------
+    -------- METHODS THAT NEED TO HAVE A CALLBACK -----------
+
+    //sort => Sorts the elements of an array
+    //comment => the string array are sorted by each letter in the string
+    //and for numbers you have to mention the substraction in order 
+    //sort the numbers in descending or ascending order
+    //console.log(strArray.sort());
+    //console.log(numArray.sort((a, b) => { return a-b }).reverse().toString());
+
+    //some => Checks if any of the elements in an array pass a test
+    //comment => this is similar to .Any() method in C# Linq
+    //console.log(numArray.some((value) => { return value > 50 }));
+    //console.log(numArray.some((value) => { return value > 50 }));
+    //var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    //var myBest = fruits.slice(-3, -1);
+
+    //reduce => Reduce the values of an array to a single value (going left-to-right)
+    //comment => this reminds me of the Sum method in C# LINQ
+    //console.log(numArray.reduce((value, total) => { return value+total;}));
+    //console.log(strArray.reduceRight((value, total) => { return value+total;}));
+    
+    //map => Creates a new array with the result of calling a function 
+    //for each array element
+    // let result = numArray.map((number, i) => { if (number > 30) return Math.sqrt(number + i) });
+    // result = result.filter((value) => { return value != undefined });
+    // console.log(result);
+
+    //includes => Check if an array contains the specified element
+    //comment => this reminds me of Contains method in C#
+    //this method is case sensitive
+    //console.log(strArray.includes("C#",0));
+
+    //forEach => Calls a function for each array element
+    //comment => this is exactly like ForEach method in LNIQ C#
+    // in C# LINQ it's very difficult to access the index of the item
+    // in JS you can do it as below
+    //syntax for getting the index
+    //strArray.forEach((value,index) => console.log(value + index));
+    //adding all the numbers in the array
+    // let sum = 0;
+    // numArray.forEach((number)=>{sum+=number});
+    // console.log(sum);
+    //multiply all the numbers in the array and storing the result in the
+    // original array
+    // numArray.forEach((number, index, arr) => {
+    //     arr[index] = number * 10;
+    // });
+    // console.log(numArray);
+
+    //findIndex => Returns the index of the first element in an array that pass a test
+    //comment => this is like IndexOf in LINQ for C#
+    //console.log(strArray.findIndex((value) => { return value.length > 4; }));
+
+    //find => Returns the value of the first element in an array that pass a test
+    //comment => find is like FirstOrDefault in LINQ
+    //console.log(strArray.find((value) => { return value.length > 4 }));
+    
+    //filter => Creates a new array with every element in an array that pass a test
+    //comment => this is like .Where in LINQ
+    //strArray = strArray.filter(checkLengthForAllElement);
+    //strArray = strArray.filter((value) => { return value.length > 0 });
+    //console.log(strArray);
+
+    //fill => Fill the elements in an array with a static value
+    //comment => Array.Fill in C#
+    //console.log(strArray.fill("C", 3, strArray.length));
+
+    //every => Checks if every element in an array pass a test
+    //comment => same as .All LINQ method in C#
+    //console.log(strArray.every(checkLengthForAllElement));
+
+    --------------------------------------------------------------
+
+    //-------- SOME EXTRA FUNCTIONS ------------------------------//
+
+    //from => Creates an array from an object
+    //comment => from method is little confusing as it only converts strings
+    //and not numbers or custom objetcs. But it does convert string into an array
+    // let person = {
+    //     name: "Fahad",
+    //     age: 32,
+    //     height: 6.1
+    // };
+    //let arrayOfObject = Array.from(23);
+    //arrayOfObject = Array.from("23");
+    //let arrayOfObject = "23".split();
+    //arrayOfObject = Array.from("12345");
+    //console.log("12345"[0]);
+    //console.log(person);
+
+    //entries => Returns a key/value pair Array Iteration Object
+    // for (let x of strArray.entries()) {
+    //     console.log(x[1]);
+    // }
+
+    //--------------------------------------------------//
+}
