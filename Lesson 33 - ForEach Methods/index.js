@@ -1,14 +1,10 @@
-function submit(){
+function submit() {
     
     let names = ["John", "Jane", "Fahad", "Monica", "Sherlock"];
     let scores = [35, 90, 77, 80];
 
-    //let results = names.slice(2, 5);
-    names.splice(2, 3, "Bill", "Steve", "Satya");
-
-    for (let i = 0; i < names.length; i++){
-        console.log(names[i]);
-    }
+    scores.forEach((value, index, scores) => scores[index] = value*10);
+    scores.forEach((value, index) => console.log(value + "-" + index));
 
     document.getElementById("demo1").innerHTML = "";
 }
