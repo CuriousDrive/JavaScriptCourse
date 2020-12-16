@@ -4,9 +4,12 @@ function submit(){
     let scores = [35, 90, 77, 80];
     let names2 = ["Bill", "Steve", "Satya"];
 
-    for (let i = 0; i < names.length; i++){
-        console.log(names[i]);
+    let finalList = names1.concat(names2);
+    finalList = finalList.reverse();
+
+    for (let i = 0; i < finalList.length; i++){
+        console.log(finalList[i]);
     }
 
-    document.getElementById("demo1").innerHTML = "";
+    document.getElementById("demo1").innerHTML = finalList.indexOf("Sherlock");
 }
