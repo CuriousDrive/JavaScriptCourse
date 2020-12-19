@@ -8,5 +8,9 @@ function submit() {
 
     console.log("-----------------");
 
+    //console.log(scores.some((value) => value > 75));
+
+    console.log(scores.every((value) => value > 15));
+
     document.getElementById("demo1").innerHTML = "";
 }
