@@ -8,5 +8,8 @@ function submit() {
 
     console.log("----------------");
 
+    let awesomeScores = scores.filter((value) => value > 75);
+    awesomeScores.forEach((value) => console.log(value));
+
     document.getElementById("demo1").innerHTML = "";
 }
