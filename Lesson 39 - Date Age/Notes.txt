@@ -1,0 +1,10 @@
+Plan for the next half an hour => 
+
+Date
+Maths
+Random
+Let, Const and Var
+Hoisting
+Errors
+Debugging
+Best Practices
