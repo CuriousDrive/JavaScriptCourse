@@ -1,0 +1,25 @@
+Plan for the next half an hour => 
+
+Date
+Maths
+Random
+Let, Const and Var
+Hoisting
+Errors
+Debugging
+Best Practices
+
+
+    //section 1
+    //let result = Math.round(11.4);
+    //let result = Math.ceil(11.1);
+    //let result = Math.floor(11.9);
+    //let result = Math.abs(-100);
+    //let result = Math.round(Math.random()*100);
+    
+    //section 1
+    //let result = Math.pow(12,2); //12*12 => 144
+    //let result = Math.sqrt(144); //12*12 => 144
+    //let result = Math.min(1, 2, 3, 4, 5, 6);
+    //let result = Math.max(1, 2, 3, 4, 5, 6);
+    //let result = Math.PI
