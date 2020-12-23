@@ -15,9 +15,9 @@ Best Practices
     //let result = Math.ceil(11.1);
     //let result = Math.floor(11.9);
     //let result = Math.abs(-100);
-    //let result = Math.round(Math.random()*100);
+    //let result = Math.floor(Math.random()*100);
     
-    //section 1
+    //section 2
     //let result = Math.pow(12,2); //12*12 => 144
     //let result = Math.sqrt(144); //12*12 => 144
     //let result = Math.min(1, 2, 3, 4, 5, 6);
