@@ -1,4 +1,5 @@
 function submit() {
     
-    document.getElementById("demo1").innerHTML = "";
+    let result = 11.6;
+    document.getElementById("demo1").innerHTML = result;
 }
