@@ -1,5 +1,5 @@
 function submit() {
     
-    let result = "Curious Drive";
-    console.log(result);
+    let name = "John Smith";
+    console.log(name);
 }
