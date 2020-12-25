@@ -1,5 +1,5 @@
 function submit() {
     
-    let name = "John Smith";
-    console.log(name);
+    let fullName = "John Smith";
+    console.log(fullName);
 }
