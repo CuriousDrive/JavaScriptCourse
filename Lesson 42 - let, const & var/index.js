@@ -1,5 +1,12 @@
 function submit() {
     
-    let fullName = "John Smith";
+    const fullName = "John Smith";
+    fullName = "Fahad Mullaji";
+    
+    if (true)
+    {
+        console.log(fullName);    
+    }
+
     console.log(fullName);
 }
