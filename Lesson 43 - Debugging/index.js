@@ -2,7 +2,6 @@ function submit() {
     
     let x = 20;
     let y = 10;
-    
 
     let addition = add(x, y);
     let substraction = substract(x, y);
