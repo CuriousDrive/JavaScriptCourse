@@ -2,8 +2,8 @@ function submit() {
     
     let x = 20;
     let y = 10;
+    
 
-    debugger;
     let addition = add(x, y);
     let substraction = substract(x, y);
     let multiplication = multiply(x, y);
@@ -26,7 +26,7 @@ function substract(x, y) {
 }
 
 function multiply(x, y) {
-    var result = x * y;
+    var result = x ** y;
     return result;
 }
 
