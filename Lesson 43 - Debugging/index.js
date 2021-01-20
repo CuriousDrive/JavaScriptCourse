@@ -5,6 +5,7 @@ function submit() {
 
     let addition = add(x, y);
     let substraction = substract(x, y);
+    debugger;
     let multiplication = multiply(x, y);
     let division = divide(x, y);
 
