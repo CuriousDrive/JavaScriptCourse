@@ -6,4 +6,5 @@ function submit() {
     let result = x / y;
 
     document.getElementById("demo1").innerHTML = result;
+
 }
